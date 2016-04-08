@@ -20,7 +20,7 @@ $web->app = $app;
     <body>
     	<?php $web->drawContent(); ?>
     </body>
-    <footer>
+    <footer class="page-footer green">
         <?php $web->drawFooter(); ?>
     </footer>
 </html>

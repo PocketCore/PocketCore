@@ -17,7 +17,7 @@ class PocketCore extends PluginBase
   }
   
   private function connect(){
-    if($api_key = $this->getConfig()->get('api_key') or Bridge::validateKey($api_key));
+    if($api_key = $this->getConfig()->get('api_key') or Bridge::validateKey($api_key))
     {
       $st = microtime(true);
       $this->bridge = new Bridge($api_key); 
