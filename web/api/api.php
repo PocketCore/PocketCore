@@ -15,7 +15,7 @@ if(isset($_GET['api_key')){
   }
   
   if($api->error !== null){
-    die('ERROR: '.$api->error');
+    die('ERROR: '.$api->error);
   }
   
   if(isset($_GET['q'])){
