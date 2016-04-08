@@ -2,6 +2,11 @@
 
 class PocketCore 
 {
+  
+  /** @var bool $answer */
+  public $answer = false;
+  /** @var bool $error */
+  public $error = false;
 
   public function __construct($api_key){
     # Check if this server has connected to our server already if not return a password for their session.
