@@ -1,7 +1,7 @@
 <?php
 require 'scripts/PocketCore.php'; # This file contains class PocketCore
 
-# This file recieves requests from MCPE servers.
+# This file recieves requests from MCPE servers and completes .
 
 if(isset($_GET['api_key'])){
   $api = new PocketCore($_GET['api_key']);

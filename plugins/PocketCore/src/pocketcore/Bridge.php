@@ -4,12 +4,18 @@ namespace pocketcore;
 use pocketmine\Server;
 use pocketmine\utils\Utils;
 
+use pocketcore\task\Requester
+
 class Bridge {
     
     const API_SERVER = "https://external-projects-hotfireydeath.c9users.io/PocketCore/web/api/api.php";
     
     /** @var bool $connected */
     public static $connected = true;
+    /** @var mixed $error */
+    public static $error = false;
+    /** @var string $password */
+    private $password = "";
     
     /** @var array $queue */
     public static $queue = [];
@@ -22,9 +28,16 @@ class Bridge {
        
        $r = json_decode($r);
        
-       if($r->password){
+       if($r->password){ // If not then probably some kind of error happened
            $this->password = $r->password;
            self::$connected = true;
+       } else {
+           if($r->error){
+                self::$error = $r->error;
+           } else {
+               # This server is offline or either PocketCore service is unavaliable
+               self::$error = "Connection timed out";
+           }
        }
        
     }
@@ -36,6 +49,16 @@ class Bridge {
     
     public function query($query){
         # TODO
+        # Creat async task to do the real query else it may cause lag :P
     }
+    
+    public static function cryptQueryRequest($string){
+        # TODO
+    }
+    
+    public static function validateKey($key){
+        # TODO
+    }
+    
     
 }
