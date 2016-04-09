@@ -19,13 +19,23 @@
     		<nav class="theme-color">
     		  <div class="nav-wrapper theme-color">
     		     <a href="#" class="brand-logo center"><h4 style="margin-left: 7px; margin-top: 12px;">PocketCore</h4></a>
-    		     <ul id="nav-mobile" class="left hide-on-med-and-down hover-jump">
-    			    <li><a href="?app=servers">Servers</a></li>
-    			    <li><a href="?app=stats">Stats</a></li>
-    			 </ul>
-    			 <ul class="right hide-on-med-and-down">
-    			    <li><a href="?app=auth"><?php echo (true ? "Logout" : "Login/Register"); ?></a></li>
-    		     </ul>
+    		         <?php
+    		            $left = "<ul class='left hide-on-med-and-down'>";
+    		            $right = "<ul class='right hide-on-med-and-down'>";
+    		            
+    		            foreach($this->getMenuItems() as $id => $item){
+    		                if($item['side'] == 'left'){
+    		                    # Left
+    		                   if($item['visible']) $left .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+    		                } else {
+    		                    # Right
+    		                    if($item['visible']) $left .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+    		                }
+    		            }
+    		            $left .= "</ul>";
+    		            $right .= "</ul>";
+    		            echo $left.$right;
+    		         ?>
     		  </div>
     		</nav>
     	</div>

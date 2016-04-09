@@ -1,0 +1,16 @@
+.hover-jump a {
+    transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -o-transition: 0.9s;
+}
+.hover-jump a:hover {
+    text-shadow: 0px 0px 2px #FFF;
+    font-size: 1.14em;
+}
+.input-field label {
+    color: #FFF;
+}
+.theme-color {
+    background-color: DeepSkyBlue !important;
+}

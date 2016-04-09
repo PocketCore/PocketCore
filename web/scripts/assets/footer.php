@@ -23,7 +23,7 @@
             <div class="card" style="background-color: rgba(185, 185, 185, 0.3);">
                 <div class="card-content">
                     <p style="font-weight: 100;" class="text-flow">
-                        <i class="fa fa-users"></i> <a href="#" style="color: black; text-decoration: none;">Contributors<s/a>
+                        <i class="fa fa-users"></i> <a href="#" style="color: black; text-decoration: none;">Contributors</a>
                     </p>
                 </div>
             </div>
