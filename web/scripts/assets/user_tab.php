@@ -1,5 +1,6 @@
 <ul id="user_dropdown" class="dropdown-content">
     <?php
+    echo "Hello;";
         if($this->user !== null){
             # User has authenticated
             

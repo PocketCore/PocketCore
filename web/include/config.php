@@ -51,7 +51,7 @@ $INFO['menu-items'] = array (
                 'type' => 'link',
                 'side' => 'left'
                 ),
-            'documentation' => array (
+            'docs' => array (
                 'link' => '?app=docs',
                 'display' => 'For Developers',
                 'type' => 'link',
@@ -63,7 +63,7 @@ $INFO['menu-items'] = array (
                 'display' => 'Account', # Wait for me :D
                 'type' => 'file',
                 'side' => 'right',
-                'file' => $this->getAsset('user_tab')
+                'file' => 'user_tab'
                 )
             );
 

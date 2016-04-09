@@ -24,12 +24,16 @@
     		            $right = "<ul class='right hide-on-med-and-down'>";
     		            
     		            foreach($this->getMenuItems() as $id => $item){
-    		                if($item['side'] == 'left'){
-    		                    # Left
-    		                   if($item['visible']) $left .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
-    		                } else {
-    		                    # Right
-    		                    if($item['visible']) $right /*<- you entered $left lol*/ .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+    		                if($item['type'] === 'link'){
+        		                if($item['side'] == 'left'){
+        		                    # Left
+        		                   if($item['visible']) $left .= "<li class='waves-effect waves-light ".($id == $_GET['app'] ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+        		                } else {
+        		                    # Right
+        		                    if($item['visible']) $right .= "<li class='waves-effect waves-light ".($id == $_GET['app'] ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+        		                }
+    		                } elseif ($item['type'] == 'file'){
+    		                    require $this->getAsset($item['file']);
     		                }
     		            }
     		            $left .= "</ul>";

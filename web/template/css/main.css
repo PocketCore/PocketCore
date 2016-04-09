@@ -14,3 +14,27 @@
 .theme-color {
     background-color: DeepSkyBlue !important;
 }
+
+/* Sticky footer
+    http://materializecss.com/footer.html
+*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.contributors li a {
+    font-weight: 100;
+    color: black;
+}
+.contributors li {
+    text-align: center;
+}
+ul.contributors {
+    margin-top: 0;
+}

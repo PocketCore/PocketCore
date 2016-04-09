@@ -59,14 +59,18 @@ class Web {
     }
     
     public function drawContent(){
+        // Auto set title
+        $this->setTitle($this->info['menu-items'][$this->app]['display']);
+        
         $r = require ("apps/".$this->app."/".$this->app.".php");
         return $r;
     }
     
     public function getAsset($name){
-        if(file_exists(self::$path.'assets/'.$name.'.php')){
-            require self::$path.'assets/'.$name.'.php';
+        if(file_exists('scripts/assets/'.$name.'.php')){
+            return 'scripts/assets/'.$name.'.php';
         }
+        return 'file_not_found';
     }
     
     public function drawFooter(){

@@ -8,3 +8,7 @@
              indicators: false
          });
     });
+    
+    function show_contributors(){
+        $('.contributors').slideToggle(300);
+    }
