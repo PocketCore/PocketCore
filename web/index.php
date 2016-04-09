@@ -17,10 +17,10 @@ $web->app = $app;
     <head>
     	<?php $web->drawHeader(); ?>
     </head>
-    <body>
+    <body style="background-color: #ecf0f1;">
     	<?php $web->drawContent(); ?>
     </body>
-    <footer class="page-footer green">
+    <footer class="page-footer theme-color">
         <?php $web->drawFooter(); ?>
     </footer>
 </html>
