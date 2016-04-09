@@ -59,10 +59,11 @@ $INFO['menu-items'] = array (
                 'side' => 'left'
                 ),
             'account' => array(
-                'display' => 'Account',
+                'visible' => true, #We forgot to add this, and look at my comment in header.php as well..
+                'display' => 'Account', # Wait for me :D
                 'type' => 'file',
                 'side' => 'right',
-                'file' => 'user_tab.php'
+                'file' => $this->getAsset('user_tab')
                 )
             );
 

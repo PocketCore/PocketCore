@@ -29,7 +29,7 @@
     		                   if($item['visible']) $left .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
     		                } else {
     		                    # Right
-    		                    if($item['visible']) $left .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
+    		                    if($item['visible']) $right /*<- you entered $left lol*/ .= "<li class='".($id == $this->app ? 'active' : '')."'><a href='".$item['link']."'>".$item['display']."</a></li>";
     		                }
     		            }
     		            $left .= "</ul>";
