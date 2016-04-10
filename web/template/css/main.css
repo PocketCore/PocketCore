@@ -14,6 +14,16 @@
 .theme-color {
     background-color: DeepSkyBlue !important;
 }
+.fa-color {
+    color: #2c3e50;
+}
+.background-color {
+    background-color: #ecf0f1; /* Clouds (light gray) */
+}
+
+.slides {
+    box-shadow: 0px 12px 17px rgb(163, 163, 163) !important;
+}
 
 /* Sticky footer
     http://materializecss.com/footer.html
@@ -37,4 +47,12 @@ main {
 }
 ul.contributors {
     margin-top: 0;
+}
+
+/*
+    Canvas as background
+*/
+#demo-canvas {
+    position: fixed;
+    z-index: -50; /* Lower more if problems with element interactions caused by canvas appears */
 }

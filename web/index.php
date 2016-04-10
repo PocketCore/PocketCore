@@ -16,12 +16,12 @@ $web->app = $app;
 <html>
     <head>
         <!-- :: HEADER -->
-    	<?php $web->drawHeader(); ?>
+    	<?php $web->drawHeader(); // Tip: don't comment this code ?>
     	<!-- :: HEADER END -->
     </head>
 
-<main> <!-- main tag is here to make sticky footer work -->
-    <body style="background-color: #ecf0f1;">
+<main class=""> <!-- main tag is here to make sticky footer work -->
+    <body class="background-color">
     	<?php $web->drawContent(); ?>
     </body>
 </main>

@@ -1,9 +1,19 @@
 <?php
     $this->setTitle("Home");
 ?>
-<div class="wrapper">
+<div class="wrapper" class="large-header" id="large-header">
+  
+			<canvas height="100%" width="100%" id="demo-canvas"></canvas>
+  
     <br>
-    <div class="container">
+    <div class="container demo-1">
+      
+      <script src="template/js/TweenLite.min.js"></script>
+      <script src="template/js/EasePack.min.js"></script>
+      <script src="template/js/rAF.js"></script>
+      <script src="template/js/demo-1.js"></script>
+      <link rel='stylesheet' type='text/css' href='tempate/css/component.css'></link>
+      
     	<!-- Page content goes here -->
     	<div class="slider">
     	  <!-- page image -->
@@ -35,22 +45,31 @@
     	</div>
     	<br>
     	<h5 style="text-align: center;">Features</h5>
-    	<br>
-    	<div class="row">
-    	  <div class="col s6">
-    	    Feature 1
+    	
+    	</br>
+    	</br>
+    	</br>
+    	
+    	<div class="row center-align">
+    	  <div class="col s4">
+    	    <i class="fa fa-bolt  fa-5x fa-color"></i>
+    	    <p>
+    	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis sodales ligula, vel laoreet justo tempus eu. Duis ultricies rutrum rutrum.
+    	    </p>
     	  </div>
-    	  <div class="col s6">
-    	    Feature 2
+    	  <div class="col s4 ">
+    	    <i class="fa fa-group fa-5x fa-color"></i>
+    	    <p>
+    	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis sodales ligula, vel laoreet justo tempus eu. Duis ultricies rutrum rutrum.
+    	    </p>
+    	  </div>
+    	  <div class="col s4">
+    	    <i class="fa fa-tasks  fa-5x fa-color"></i>
+    	    <p>
+    	      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sagittis sodales ligula, vel laoreet justo tempus eu. Duis ultricies rutrum rutrum.
+    	    </p>
     	  </div>
     	</div>
-    	<div class="row">
-    	  <div class="col s6">
-    	    Feature 3
-    	  </div>
-    	  <div class="col s6">
-    	    Feature 4
-    	  </div>
     	</div>
     </div>
 </div>

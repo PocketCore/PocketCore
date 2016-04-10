@@ -1,0 +1,2 @@
+<?php
+# Disable default footer
