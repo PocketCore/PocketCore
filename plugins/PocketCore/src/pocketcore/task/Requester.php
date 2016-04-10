@@ -3,15 +3,17 @@ namespace pocketcore\task;
 
 use pocketcore\Bridge;
 
-use pocketmine\task\AsyncTask;
+use pocketmine\scheduler\AsyncTask;
+
+use pocketmine\Server;
 
 class Requester extends AsyncTask {
     
-    public function __costruct(){}
+    public function __construct(){}
     
     public function onRun(){}
     
-    public function onFinish(Server $server){
+    public function onCompletion(Server $server){
         
     }
 }
