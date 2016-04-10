@@ -4,7 +4,7 @@ namespace pocketcore;
 use pocketmine\Server;
 use pocketmine\utils\Utils;
 
-use pocketcore\task\Requester
+use pocketcore\task\Requester;
 
 class Bridge {
     
