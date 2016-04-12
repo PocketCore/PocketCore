@@ -37,6 +37,8 @@ if (isset($_GET["ip"]) and isset($_GET["port"])){
         // Must think of way to safely allow registering servers to avoid fake owners
         // What about owner see rcon console?
         
+        $status = Servers::registerServer($ip, $port);
+        
     } else {
         
         // If it's already registered here then show user the info from our databases (+ query ?)
