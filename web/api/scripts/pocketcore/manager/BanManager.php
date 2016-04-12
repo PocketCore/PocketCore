@@ -9,7 +9,7 @@ class BanManager {
         $this->main = $api;
     }
     
-    public function isBanned($name){
+    public function isBanned(String $name){
         // $this->main->getBanList(); << This function will get ban list whetever server is using global or individual
         return in_array(strtolower($name[0]), array('steve', 'mega', 'jake', 'rob', 'stephanie', 'chris'), true);
     }

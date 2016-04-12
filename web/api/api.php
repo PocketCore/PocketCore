@@ -3,6 +3,12 @@
 define("API", 1); // To require scripts, constant 'API' must be defined else you won't have permission for them
 
 /*
+OMG :D I did it
+[15:49:18] [Server thread/INFO]: API Server replied 
+[15:49:18] [Server thread/INFO]: Message: Hi 10.240.0.225, You successfully reached our API server :).
+[15:49:18] [Server thread/INFO]: Error: 
+[15:49:18] [Server thread/INFO]: Response: 1
+
 Test this script from phpfiddle.org using code below:
 
 And using these api keys:
@@ -96,7 +102,12 @@ if(isset($_POST['api_key'])){
     
     extract($_POST);
     
-    $api = new Main($_POST);
+    $api = new Main($_POST['api_key'], $_SERVER);
+    
+    if($api->response  != null){
+        $response = $api->response;
+        __response();
+    }
     
     $r = $api->hasPermission($_POST['api_key']);
     if($r !== true){
