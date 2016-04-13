@@ -9,6 +9,9 @@
         $('#' + page_data["current_viewing"]).show();
         Materialize.showStaggeredList('#' + page_data["current_viewing"]);
     }
+    $(document).ready(function(){
+        $('.modal-trigger').leanModal();
+    });
 </script>
 <link rel="stylesheet" href="template/css/highlight/github.css">
 <script src="template/js/highlight.pack.js"></script>
@@ -42,14 +45,14 @@
 
 <div class="row">
     <div class="col s2">
-        <div class="card z-depth-1">
+        <div class="card">
             <div class="card-content">
-                <ul class="collapsible" data-collapsible="accordion">
+                <ul class="collapsible z-depth-0" data-collapsible="accordion">
                     <li>
                         <div class="collapsible-header theme-color z-depth-1">Web</div>
                         <div class="collapsible-body">
                             <div class="container">
-                                <ul class="collapsible" data-collapsible="accordion">
+                                <ul class="collapsible z-depth-0" data-collapsible="accordion">
                                     <li>
                                         <div class="collapsible-header theme-color">BanManager</div>
                                         <div class="collapsible-body">
@@ -101,12 +104,12 @@
             <li class="fbg"><p style="font-weight: 100;">Method type: Function</p></li>
             <br>
             <li class="fbg">Checks if the specified player is banned.</li>
-            <br>
-            <br>
+            <li><pre><code class="php">$BanManager->isBanned($name)</code></pre></li>
             <li class="fbg"><strong>Arguments</strong></li>
             <li class="fbg"><p style="font-weight: 100;">String $name</p></li>
             <li class="fbg"><br><br><strong>Returns</strong></li>
             <li class="fbg"><p style="font-weight: 100;">Boolean</p></li>
+            <li class="fbg"><a class="btn waves-effect waves-light theme-color modal-trigger" href="#banmgr_isBanned_example">See example</a></li>
         </ul>
         <ul id="authmgr___construct" class="dhk">
             <li class="fbg"><h4>__construct()</h4></li>
@@ -120,5 +123,15 @@
             <li class="fbg"><br><br><strong>Returns</strong></li>
             <li class="fbg"><p style="font-weight: 100;">AuthManager</p></li>
         </ul>
+    </div>
+</div>
+<!-- PLACE ALL MODALS BELOW THIS COMMENT! -->
+<div id="banmgr_isBanned_example" class="modal">
+    <div class="modal-content">
+        <pre><code class="php">
+$b = new BanManager($api); //new BanManager object.
+$result = $b->isBanned("Steve");
+echo $result; //Should return true/false.
+        </code></pre>
     </div>
 </div>

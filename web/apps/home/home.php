@@ -26,7 +26,7 @@
     	            </div>
     	            <div class="caption center-align" style="margin-top: 160px; text-align: center;">
     	                <!-- Form box to register your own server for PocketCore -->
-    	                <form class="col s3" action="https://external-projects-hotfireydeath.c9users.io/PocketCore/web/apps/servers/servers.php" method="get">
+    	                <form class="col s3" action="../web/scripts/servers.php" method="get">
     	                    <div class="row">
                                 <div class="input-field col s6">
                                   <input id="ip" type="text" class="validate" name="ip">
