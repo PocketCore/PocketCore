@@ -10,6 +10,6 @@ Plugins are still in development, stay tuned :)
 
 ## FAQ
 
-  [*] Q: Console is showing me message: "Access denied", how can I get that access?
-  [*] A: You have to register your server on our service after that you'll recieve valid api_key which you'll have to enter in config.yml
+  * Q: Console is showing me message: "Access denied", how can I get that access?
+  * A: You have to register your server on our service after that you'll recieve valid api_key which you'll have to enter in config.yml
 
