@@ -93,7 +93,15 @@ class ComposerStaticInit9e4976fba28bb2c1f4a261092443717f
 
     public static $classMap = array (
         'pocketcore\\Master' => __DIR__ . '/../..' . '/bin/pocketcore/Master.php',
+        'pocketcore\\Server' => __DIR__ . '/../..' . '/bin/pocketcore/Server.php',
+        'pocketcore\\manager\\AuthManager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/AuthManager.php',
+        'pocketcore\\manager\\BanManager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/BanManager.php',
+        'pocketcore\\manager\\Manager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/Manager.php',
+        'pocketcore\\manager\\PlayerManager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/PlayerManager.php',
+        'pocketcore\\manager\\RespondManager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/RespondManager.php',
+        'pocketcore\\manager\\ServerManager' => __DIR__ . '/../..' . '/bin/pocketcore/manager/ServerManager.php',
         'pocketcore\\utils\\Logger' => __DIR__ . '/../..' . '/bin/pocketcore/utils/Logger.php',
+        'pocketcore\\utils\\TextFormat' => __DIR__ . '/../..' . '/bin/pocketcore/utils/TextFormat.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

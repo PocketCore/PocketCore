@@ -5,7 +5,15 @@
     "autoload": {
         "classmap": [
             "bin/pocketcore/Master.php",
-            "bin/pocketcore/utils/Logger.php"
+            "bin/pocketcore/Server.php",
+            "bin/pocketcore/utils/Logger.php",
+            "bin/pocketcore/utils/TextFormat.php",
+            "bin/pocketcore/manager/BanManager.php",
+            "bin/pocketcore/manager/AuthManager.php",
+            "bin/pocketcore/manager/PlayerManager.php",
+            "bin/pocketcore/manager/ServerManager.php",
+            "bin/pocketcore/manager/RespondManager.php",
+            "bin/pocketcore/manager/Manager.php"
         ]
     }
 }

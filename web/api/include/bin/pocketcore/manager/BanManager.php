@@ -1,16 +1,12 @@
 <?php
-if(!defined('API')) die('You don\'t have access to this file');
+namespace pocketcore\manager;
 
-class BanManager {
+use pocketcore\Master;
+
+class BanManager extends Manager {
     
-    private $main;
-    
-    public function __construct($api){
-        $this->main = $api;
+    public function __construct(Master $master){
+        parent::__construct($master);
     }
     
-    public function isBanned(String $name){
-        // $this->main->getBanList(); << This function will get ban list whetever server is using global or individual
-        return in_array(strtolower($name[0]), array('steve', 'mega', 'jake', 'rob', 'stephanie', 'chris'), true);
-    }
 }

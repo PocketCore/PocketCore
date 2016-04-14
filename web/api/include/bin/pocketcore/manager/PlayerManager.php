@@ -1,4 +1,12 @@
 <?php
-if(!defined('API')) die('You don\'t have access to this file');
+namespace pocketcore\manager;
 
-class PlayerManager {}
+use pocketcore\Master;
+
+class PlayerManager extends Manager {
+    
+    public function __construct(Master $master){
+        parent::__construct($master);
+    }
+    
+}
